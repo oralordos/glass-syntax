@@ -1,0 +1,44 @@
+atom-workspace {
+  background: radial-gradient(yellow, green, blue) no-repeat center center #777;
+  transition: background-image 6s linear;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, .4)
+}
+
+.tile {
+  height: auto !important;
+}
+
+status-bar, .tree-view, .tree-view .selected::before, .tab-bar, .tree-view-resizer {
+  background-color: @syntax-background-color;
+}
+
+atom-panel {
+  background-color: @syntax-background-color !important;
+}
+
+.close-icon {
+  color: #fff;
+  text-shadow: 0 0 20px black;
+}
+
+atom-panel.modal {
+  &::before {
+    background-color: @syntax-background-color;
+  }
+
+  .list-group {
+    max-height: 90vh;
+    background-color: transparent !important;
+  }
+}
+.settings-view, .config-menu, .settings-view .panels, .settings-panel {
+  background-color: @syntax-background-color !important;
+}
+
+background-tips .message {
+  color: white;
+  text-shadow: 0 0 9px black;
+}
