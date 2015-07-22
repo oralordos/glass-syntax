@@ -11,11 +11,11 @@ atom-workspace {
   height: auto !important;
 }
 
-status-bar, .tree-view, .tree-view .selected::before, .tab-bar, .tree-view-resizer {
+status-bar, .tree-view .selected::before, .tree-view-resizer {
   background-color: @syntax-background-color;
 }
 
-atom-panel {
+.tab-bar, .tree-view, atom-panel {
   background-color: @syntax-background-color !important;
 }
 
@@ -26,7 +26,7 @@ atom-panel {
 
 atom-panel.modal {
   &::before {
-    background-color: @syntax-background-color;
+    background-color: @syntax-background-color !important;
   }
 
   .list-group {
