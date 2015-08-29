@@ -9,6 +9,7 @@
     "transparent"
   ],
   "repository": "https://github.com/oralordos/glass-syntax",
+  "main": "lib/main",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
