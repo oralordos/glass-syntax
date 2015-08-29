@@ -1,5 +1,9 @@
 atom-workspace {
   background: radial-gradient(yellow, green, blue) no-repeat center center #777;
+
+  status-bar.status-bar {
+    background-color: @syntax-background-color;
+  }
 }
 
 .line {
@@ -10,7 +14,7 @@ atom-workspace {
   height: auto !important;
 }
 
-status-bar, .tree-view .selected::before, .tree-view-resizer {
+.tree-view .selected::before, .tree-view-resizer {
   background-color: @syntax-background-color;
 }
 
