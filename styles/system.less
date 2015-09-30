@@ -61,6 +61,14 @@ atom-workspace {
   }
 }
 
+.tool-panel {
+  background-color: fadein(@syntax-background-color, 30%);
+
+  .panel-heading {
+    background-color: lighten(fadeout(@syntax-background-color, 20%), 15%);
+  }
+}
+
 .tree-view .selected::before, .tree-view-resizer {
   background-color: @syntax-background-color;
 }
