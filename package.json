@@ -1,7 +1,7 @@
 {
   "name": "glass-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A transparent theme for use with a background image.",
   "keywords": [
     "syntax",
