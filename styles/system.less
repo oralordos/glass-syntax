@@ -66,6 +66,15 @@ atom-workspace {
 }
 
 .tab-bar, .tree-view, atom-panel {
+  .tab {
+    .title {
+      background-color: @syntax-background-color;
+    }
+
+    &::after {
+      background-image: none;
+    }
+  }
   background-color: @syntax-background-color !important;
 }
 
