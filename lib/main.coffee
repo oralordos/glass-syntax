@@ -93,7 +93,7 @@ module.exports =
       minimum: 0
     backgroundImages:
       title: 'Background Images'
-      description: 'The images that will be used as backgrounds, separated by commas. Folder names are accepted, and will be recursively examined for files, there may be non-fatal errors if there are any files that are not images in the folder. Full http and https urls are accepted as well, but will give a blank screen with a fail symbol if the image cannot be found, due to network issues or otherwise.'
+      description: 'The images that will be used as backgrounds, separated by commas. Folder names are accepted, and will be recursively examined for files, there may be non-fatal errors if there are any files that are not images in the folder. Full http and https urls are accepted as well, but will give a blank screen with a fail symbol if the image cannot be found, due to network issues or otherwise. Use "/", not "\\" to separate folders'
       type: 'array'
       default: []
       items:
