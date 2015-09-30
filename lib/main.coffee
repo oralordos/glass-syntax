@@ -46,7 +46,9 @@ disableBackground = () ->
     clearInterval(backgroundID)
     currentIndex = -1
     backgroundID = null
-    document.querySelector('atom-workspace').style.backgroundImage = ''
+    workspace = document.querySelector('atom-workspace')
+    workspace.style.backgroundImage = ''
+    workspace.style.transition = ''
 
 getRandomInt = (min, max) ->
   return Math.floor(Math.random() * (max - min)) + min;
@@ -107,5 +109,6 @@ module.exports =
     atom.config.observe 'glass-syntax.transitionTime', (newValue) ->
       document.querySelector('atom-workspace').style.transition = 'background-image ' + newValue + 's linear'
 
-  deactivate: ->
+  deactivate: () ->
     clearCache()
+    disableBackground()
