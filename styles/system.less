@@ -14,6 +14,53 @@ atom-workspace {
   background-color: transparent !important;
 }
 
+.btn, .btn.btn-default {
+  background-color: transparent;
+
+  background-image: linear-gradient(lighten(@syntax-background-color, 15%), lighten(@syntax-background-color, 20%));
+
+  &:hover {
+    background-color: transparent;
+    background-image: linear-gradient(lighten(@syntax-background-color, 30%), lighten(@syntax-background-color, 40%));
+  }
+}
+
+.settings-view {
+  select.form-control {
+    &:hover {
+      background-color: lighten(@syntax-background-color, 30%);
+    }
+    background-color: lighten(@syntax-background-color, 15%);
+
+    option {
+      background-color: lighten(@syntax-background-color, 5%);
+    }
+  }
+
+  .package-detail .package-card, .package-card {
+    &:hover {
+      background-color: lighten(@syntax-background-color, 30%);
+    }
+    background-color: lighten(@syntax-background-color, 15%);
+  }
+
+  .config-menu .nav > li {
+    &.active > a {
+      &:hover {
+        background-color: lighten(@syntax-background-color, 30%);
+      }
+
+      background-color: lighten(@syntax-background-color, 10%);
+    }
+
+    & > a {
+      &:hover {
+        background-color: @syntax-background-color;
+      }
+    }
+  }
+}
+
 .tree-view .selected::before, .tree-view-resizer {
   background-color: @syntax-background-color;
 }
