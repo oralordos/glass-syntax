@@ -102,12 +102,13 @@ module.exports =
         type: 'string'
 
   activate: (state) ->
-    atom.config.observe 'glass-syntax.backgroundImages', (newValue) ->
+    atom.config.onDidChange 'glass-syntax.backgroundImages', (newValue) ->
       configChange()
-    atom.config.observe 'glass-syntax.delayTime', (newValue) ->
+    atom.config.onDidChange 'glass-syntax.delayTime', (newValue) ->
       configChange()
     atom.config.observe 'glass-syntax.transitionTime', (newValue) ->
       document.querySelector('atom-workspace').style.transition = 'background-image ' + newValue + 's linear'
+    configChange()
 
   deactivate: () ->
     clearCache()
