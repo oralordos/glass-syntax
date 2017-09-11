@@ -11,10 +11,6 @@ atom-workspace {
   background-color: rgba(0, 0, 0, .4)
 }
 
-.lines > div:first-child > div {
-  background-color: transparent !important;
-}
-
 .btn, .btn.btn-default {
   background-color: transparent;
 
@@ -75,8 +71,8 @@ atom-panel .am-panel {
 }
 
 .tab-bar, .tree-view, atom-panel {
-  .tab {
-    .title {
+  .syntax--tab {
+    .syntax--title {
       background-color: @syntax-background-color !important;
     }
 
@@ -106,7 +102,7 @@ atom-panel.modal {
   background-color: @syntax-background-color !important;
 }
 
-background-tips .message {
+background-tips .syntax--message {
   color: white;
   text-shadow: 0 0 9px black;
 }
