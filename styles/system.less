@@ -88,6 +88,10 @@ atom-panel .am-panel {
   text-shadow: 0 0 20px black;
 }
 
+.atom-dock-mask {
+background-color: @syntax-background-color;
+}
+
 atom-panel.modal {
   &::before {
     background-color: @syntax-background-color !important;
@@ -105,4 +109,18 @@ atom-panel.modal {
 background-tips .syntax--message {
   color: white;
   text-shadow: 0 0 9px black;
+}
+atom-pane-container atom-pane {
+  background-color: fadeout(@syntax-background-color, 30%);
+}
+
+// atom-panel-container.footer {
+//  background-color: @syntax-background-color;
+// }
+.go-plus-panel-body.panel-body.native-key-bindings {
+background-color: @syntax-background-color;
+}
+
+.panel-heading {
+  background-image: none;
 }
